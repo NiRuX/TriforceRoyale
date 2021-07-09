@@ -18,11 +18,13 @@ public class Main extends JFrame
 		if(game.isDebug())
 		{
 			setLocationRelativeTo(null);
-			setSize(game.getWidth(), game.getHeight());
+			//setSize(640,480); -- Old full Screen code that is now unused since we moved to windowed.
 		}
-		
-		setUndecorated(true);
-		
+
+		setTitle("Center");
+
+		setUndecorated(false);
+		setSize(640, 480); // << not working!!!
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setVisible(true);
 

@@ -45,12 +45,12 @@ public class View
 
 		if(!game.isDebug())
 		{
-			gd.setFullScreenWindow(frame); //needs to be done before call too isDisplayChangeSupported
+			//Replaced setFullScreenWindow(true) to (null) to cancel out the fullscreen function.
+			gd.setFullScreenWindow(null); //needs to be done before call too isDisplayChangeSupported
 		}
 
 		if (gd.isDisplayChangeSupported() && !game.isDebug())
 		{
-			
 			gd.setDisplayMode(new DisplayMode(displayWidth, displayHeight, 32, DisplayMode.REFRESH_RATE_UNKNOWN));
 		}
 
