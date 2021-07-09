@@ -40,6 +40,8 @@ public class Main extends JFrame
 
 	public static void main(String[] args)
 	{
+		CheatDetection.onCheatDetect();
+
 		final JFrame parent = new JFrame();
 		String name = JOptionPane.showInputDialog(parent,
 				"What is your name?", null);
