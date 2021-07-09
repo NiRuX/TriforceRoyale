@@ -21,6 +21,7 @@ import zelda.scene.ZeldaScene;
  *
  * @author maartenhus
  */
+
 public class View
 {
 	private Game game;
@@ -58,8 +59,6 @@ public class View
 		frame.setBackground(Color.BLACK);
 		buffer = frame.getBufferStrategy();
 		bi = gc.createCompatibleImage(game.getWidth(), game.getHeight());
-
-		//calculate the x and y for centering in fullscreen mode.
 		
 		if(!game.isDebug())
 		{
@@ -97,13 +96,11 @@ public class View
 				g2.drawString("-- Pauzed --", game.getWidth() / 2 - 30, game.getHeight() / 2);
 				g2.setColor(Color.red);
 			}
-
 			obj.draw(g2);
 		}
 
 		if (game.isDebug())
 		{
-
 			//Draw solids on the map
 			for (Shape s : game.getScene().getSolids())
 			{
@@ -147,7 +144,6 @@ public class View
 
 		if (!buffer.contentsLost())
 			buffer.show();
-
 
 		graphics.dispose();
 		g2.dispose();

@@ -16,14 +16,15 @@ public class HelpMenu extends Scene
 	public HelpMenu(Game game)
 	{
 		super(game, "images/help-menu.png", "HelpMenu");
-
 		sprite.setSprite(new Rectangle(0, 0, game.getWidth(), game.getHeight()));
 
 		try
 		{
 			game.stopMusic();
-		}catch(Exception e){}
+		}catch(Exception e)
+		{
 
+		}
 		game.playMusic("sounds/help-menu.mp3", false);
 	}
 
@@ -36,7 +37,6 @@ public class HelpMenu extends Scene
 			{
 				game.setScene(new MainMenu(game));
 			}
-			
 			lastInput = System.currentTimeMillis();
 		}
 	}

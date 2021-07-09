@@ -6,9 +6,10 @@ import zelda.engine.Scene;
 import zelda.scene.HouseScene;
 
 /**
- *
- * @author maartenhus
+ * Code originated from
+ * @maartenhus's Github
  */
+
 public class MainMenu extends Scene
 {
 	private Fairy fairy = new Fairy(game, 210, 215);
@@ -18,7 +19,7 @@ public class MainMenu extends Scene
 	private static final int LOAD_GAME	= 1;
 	private static final int HELP		= 2;
 
-	private long inputInterval = 100;
+	private long inputInterval = 75;
 	private long lastInput = System.currentTimeMillis();
 
 	public MainMenu(Game game)
@@ -26,14 +27,15 @@ public class MainMenu extends Scene
 		super(game, "images/main-menu.png", "MainMenu");
 
 		sprite.setSprite(new Rectangle(0, 0, game.getWidth(), game.getHeight()));
-
 		gameObjects.add(fairy);
 
 		try
 		{
 			game.stopMusic();
-		}catch(Exception e){}
+		} catch (Exception e)
+		{
 
+		}
 		game.playMusic("sounds/main-menu.mp3", false);
 	}
 

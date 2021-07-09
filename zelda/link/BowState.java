@@ -18,7 +18,6 @@ public class BowState extends LinkState
 
     private int oldX, oldY;
 
-
 	public BowState(Link link)
 	{
 		super(link);
