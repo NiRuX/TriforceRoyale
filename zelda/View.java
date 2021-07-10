@@ -62,8 +62,8 @@ public class View
 		
 		if(!game.isDebug())
 		{
-			x = (displayWidth - game.getWidth()) /2;
-			y = (displayHeight - game.getHeight()) /2;
+			x = (displayWidth - game.getWidth()) /18;
+			y = (displayHeight - game.getHeight()) /11;
 		}
 	}	
 

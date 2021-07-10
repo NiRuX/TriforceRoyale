@@ -23,14 +23,14 @@ public class Main extends JFrame
 		if(game.isDebug())
 		{
 			setLocationRelativeTo(null);
-			setSize(640, 480);
+			setSize(575, 445);
 			//Debug code will be updated in time.
 		}
 
-		setSize(640, 480); // Code is now functional
+		setSize(515, 415); // Code is now functional
 		setLocationRelativeTo(null); // Set to the center of the screen relative to x,y getSize.
-		setTitle(" Zelda - A Link To The Past [ * ] [ PR ] [ 1.1abz ]");
-		setUndecorated(false);
+		setTitle(" TriforceRoyale ");
+		setUndecorated(true);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setVisible(true);
 
@@ -48,7 +48,6 @@ public class Main extends JFrame
 
 		// Start the osDetection Class function and return a value for the OS type.
 		osDetection.getOperatingSystemType();
-		System.out.println("FPS Cap:"); // UNPROGRAMMED CODE, CAP WILL BE 144 ON 1.2b
 	}
 
 	public static void RunGame() {

@@ -31,7 +31,7 @@ public class Game
 	private boolean paused  = false;
 	private boolean debug   = false;
 
-    private int gameSpeed = 10;
+    private int gameSpeed = 2;
     private int width = 500;
     private int height = 400;
 
