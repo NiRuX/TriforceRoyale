@@ -198,11 +198,15 @@ public class Link extends Karacter
         {
             if(!getStateString().equals("DeathState"))
             {
-				game.stopMusic();
+				//game.stopMusic();
                 game.playFx("sounds/killed.mp3");
                 setState(new DeathState(this, getDirection()));
                 //alive = false;
-            }            
+            }
+            	if(health > 5)
+				{
+					game.stopMusic();
+				}
         }
 
 		if (hitObject instanceof Soldier)
