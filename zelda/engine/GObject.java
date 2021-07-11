@@ -67,7 +67,6 @@ public abstract class GObject implements DrawAble
 
 	/**
 	 * What the GObject does when it has a collision.
-	 * @param hitObject
 	 */
 	protected void collision(GObject hitObject){}
     protected void wallCollision(){}

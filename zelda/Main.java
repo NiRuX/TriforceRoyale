@@ -8,6 +8,8 @@ import zelda.engine.Game;
 import java.util.Locale;
 import java.util.ResourceBundle;
 
+import static zelda.osDetection.*;
+
 public class Main extends JFrame
 {
 	private Game game;
@@ -47,7 +49,7 @@ public class Main extends JFrame
 				"What is your name?", null);
 
 		// Start the osDetection Class function and return a value for the OS type.
-		osDetection.getOperatingSystemType();
+		getOperatingSystemType();
 	}
 
 	public static void RunGame() {

@@ -26,9 +26,10 @@ public class Sprite
 
 		try
 		{
+			assert imageUrl != null;
 			image = ImageIO.read(imageUrl);
 		}
-		catch(IOException e){}
+		catch(IOException ignored){}
 	}
 
 	public void setSprite(Rectangle rect)

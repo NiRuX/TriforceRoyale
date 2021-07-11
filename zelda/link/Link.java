@@ -11,6 +11,8 @@ import zelda.items.Rupee;
 import zelda.karacter.Direction;
 import zelda.karacter.Karacter;
 
+import javax.swing.*;
+
 /**
  * The players avatar in the game.
  *
@@ -175,8 +177,7 @@ public class Link extends Karacter
 
 	public void handleInput()
 	{
-		//System.out.println("Link is at:");
-		//System.out.println(x + ", " + y);
+		//System.out.println("Location: " + x + ", " + y);
 
 		if (System.currentTimeMillis() > lastInput + inputInterval)
 		{
@@ -198,7 +199,7 @@ public class Link extends Karacter
         {
             if(!getStateString().equals("DeathState"))
             {
-				//game.stopMusic();
+				//sgame.stopMusic();
                 game.playFx("sounds/killed.mp3");
                 setState(new DeathState(this, getDirection()));
                 //alive = false;
