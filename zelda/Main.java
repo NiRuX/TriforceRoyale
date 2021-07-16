@@ -1,14 +1,9 @@
 package zelda;
 
+import zelda.engine.Game;
 import javax.swing.*;
 
-import sun.text.resources.cldr.ps.FormatData_ps;
-import zelda.engine.Game;
-
-import java.util.Locale;
-import java.util.ResourceBundle;
-
-import static zelda.osDetection.*;
+import static zelda.osDetection.getOperatingSystemType;
 
 public class Main extends JFrame
 {
@@ -19,7 +14,6 @@ public class Main extends JFrame
 	public Main()
 	{
 		setIgnoreRepaint(true);
-
 		game = new Game();
 
 		if(game.isDebug())
@@ -42,8 +36,6 @@ public class Main extends JFrame
 
 	public static void main(String[] args)
 	{
-		CheatDetection.onCheatDetect();
-
 		final JFrame parent = new JFrame();
 		String name = JOptionPane.showInputDialog(parent,
 				"What is your name?", null);
