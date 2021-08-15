@@ -36,10 +36,6 @@ public class Main extends JFrame
 
 	public static void main(String[] args)
 	{
-		final JFrame parent = new JFrame();
-		String name = JOptionPane.showInputDialog(parent,
-				"What is your name?", null);
-
 		// Start the osDetection Class function and return a value for the OS type.
 		getOperatingSystemType();
 	}
