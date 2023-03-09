@@ -37,22 +37,22 @@ public class osDetection {
     }
 
     public static void isWin() {
-        System.out.println("Win32/Win64 System");
+        System.out.println("NT");
         Main.RunGame();
     }
 
     public static void isMac() {
-        System.out.println("XNU System");
+        System.out.println("XNU");
         Main.RunGame();
     }
 
     public static void isUnix() {
-        System.out.println("I run arch");
+        System.out.println("UNIX/Linux");
         Main.RunGame();
     }
 
     public static void autoDetectionFailed() {
-        System.out.println("Unknown System");
+        System.out.println("NULL");
 
         JOptionPane.showMessageDialog(null,
                 "System Detection Failed, Report it on Github!",
