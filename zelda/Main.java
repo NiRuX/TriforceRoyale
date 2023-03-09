@@ -25,7 +25,8 @@ public class Main extends JFrame
 
 		setSize(515, 415); // Code is now functional
 		setLocationRelativeTo(null); // Set to the center of the screen relative to x,y getSize.
-		setTitle(" TriforceRoyale ");
+		setTitle(" TriforceRoyale " + getFrames());
+		System.out.println("FPS: " + getFrames());
 		setUndecorated(true);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setVisible(true);
