@@ -12,7 +12,7 @@ import zelda.scene.HouseScene;
 
 public class MainMenu extends Scene
 {
-	private Fairy fairy = new Fairy(game, 210, 215);
+	private Fairy fairy = new Fairy(game, 420, 430);
 
 	private static int		 CURRENT	= 0;
 	private static final int NEW_GAME	= 0;
@@ -24,9 +24,10 @@ public class MainMenu extends Scene
 
 	public MainMenu(Game game)
 	{
-		super(game, "images/main-menu.png", "MainMenu");
+		super(game, "images/main-menu-1024x768.png", "MainMenu");
 
 		sprite.setSprite(new Rectangle(0, 0, game.getWidth(), game.getHeight()));
+
 		gameObjects.add(fairy);
 
 		try

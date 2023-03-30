@@ -32,8 +32,8 @@ public class Game
 	private boolean debug   = false;
 
     private int gameSpeed = 2;
-    private int width = 500;
-    private int height = 400;
+    private int width = 1024;
+    private int height = 768;
 
     private Link link;
     private Scene scene;

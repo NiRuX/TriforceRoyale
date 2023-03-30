@@ -30,8 +30,8 @@ public class View
 	private BufferedImage bi;
 	private GraphicsDevice gd;
 
-	private int displayWidth   = 640;
-	private int displayHeight  = 480;
+	private int displayWidth   = 1024;
+	private int displayHeight  = 768;
 
 	private int x;
 	private int y;

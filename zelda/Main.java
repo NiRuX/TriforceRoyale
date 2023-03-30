@@ -19,11 +19,11 @@ public class Main extends JFrame
 		if(game.isDebug())
 		{
 			setLocationRelativeTo(null);
-			setSize(575, 445);
+			setSize(1920, 1080);
 			//Debug code will be updated in time.
 		}
 
-		setSize(515, 415); // Code is now functional
+		setSize(1920, 1080); // Code is now functional
 		setLocationRelativeTo(null); // Set to the center of the screen relative to x,y getSize.
 		setTitle(" TriforceRoyale " + getFrames());
 		System.out.println("FPS: " + getFrames());
